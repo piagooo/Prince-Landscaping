@@ -1,0 +1,42 @@
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/nunito/nunito-regular.ttf);
+}
+.parallax {
+    background-image: url(../images/Services/FullSizeRender-11.jpg);
+    height: 80%;
+    min-width: 220px;
+    background-attachment: fixed;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro{
+    height: 400px;
+    text-align: center;
+    h1{
+        font-family: nunito;
+        padding-top: 20px;
+    }
+
+    p{
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: nunito;
+    }
+}
+
+@media (max-width: 780px){
+    footer{
+        position: fixed; bottom: 0; 
+    }
+    p{
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 55px;
+        font-family: nunito;
+    }
+}

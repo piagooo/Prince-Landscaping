@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prince Landscaping</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/loading.css">
+    </head>
+
+    <body> 
+        <div id="loading-screen">
+            <img src="images/Logo/LOGO-pl.jpg" alt="Logo" id="logo"> 
+        </div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <img id="nav-logo" src="images/Logo/LOGO-pl.jpg" alt="logo">
+                <li><a href="#" style="color:green">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    <div class="parallax"></div>
+
+    <main>
+        <div class="intro">
+            <h1>Home Page</h1>
+           <p> 
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+           </p>
+        </div>
+    </main>
+        
+    <script>
+            // JavaScript para manejar la carga y desaparecer la pantalla de carga
+            window.addEventListener('load', () => {
+                // Espera 3 segundos antes de que el fondo y el logo empiecen a desvanecerse
+                setTimeout(() => {
+                    // Elimina la pantalla de carga (hace que se desvanezca)
+                    document.getElementById('loading-screen').classList.add('loaded');
+                    
+                    // Muestra el contenido de la página (desaparece el fondo y aparece el contenido)
+                    document.getElementById('content').classList.add('loaded');
+                }, 3000); // 3 segundos antes de desvanecer la pantalla de carga
+
+                
+            });
+    </script>
+
+    <footer>
+        <h2>Find Us:</h2>
+        <p>
+        <a href="https://www.facebook.com/PrinceLandscapesllc/" target="_blank"><img src="images/SocialMedia/facebook.png" class="social" title="Facebook"></a>
+        <a href="https://www.instagram.com/prince_landscapesllc/#" target="_blank"><img src="images/SocialMedia/instagram.png" class="social" title="Instagram"></a>
+        </p>
+        <br>
+        <p>Copyright 2025 (C) Prince Landscaping LLC.  Template by Virtual Space LLC.</p>
+    </footer>
+
+</body>
+</html>
