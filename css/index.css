@@ -1,0 +1,102 @@
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/nunito/nunito-regular.ttf);
+}
+
+#myVideo{
+    display: none;
+}
+
+.header-image{
+    object-fit: cover;
+    width: 100vw;
+    height: 300px;
+}
+body{
+    display: flex;
+}
+.main-content{
+    display: flex;
+    margin-top: 55px;
+}
+.intro{
+    text-align: center;
+    flex-basis: 50%;
+    order: 1;
+    h1{
+        font-family: nunito;
+        padding-top: 20px;
+    }
+
+    p{
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: nunito;
+    }
+}
+.mobile-footer{
+    position: fixed; bottom: 0; 
+}
+.split-footer{
+    display: none;
+}
+
+@media (min-width: 780px){
+    #myVideo{
+        display:inline-flex;
+        flex-basis: 50%;
+        order: 2;
+    }
+    .header-image{
+        display: none;
+    }
+    body{
+        display: flex;
+    }
+    .main-content{
+        display: flex;
+        margin-top: 55px;
+    }
+    .intro{
+        padding-top: 100px;
+        text-align: center;
+        flex-basis: 50%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-family: nunito;
+            padding-top: 20px;
+            text-align: center;
+        }
+    
+        p{
+            padding-top: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-family: nunito;
+        }
+    }
+    p{
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 55px;
+        font-family: nunito;
+    }
+ 
+    .bio{
+        height: 63.85vh;
+        text-align: left;
+    }
+    .mobile-footer{
+        display: none;
+    }
+    .split-footer{
+        display: block;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+    }
+}
