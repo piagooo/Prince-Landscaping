@@ -68,6 +68,7 @@ body{
         h1{
             font-family: nunito;
             padding-top: 20px;
+            text-align: center;
         }
     
         p{
@@ -87,12 +88,15 @@ body{
  
     .bio{
         height: 63.85vh;
+        text-align: left;
     }
     .mobile-footer{
         display: none;
     }
     .split-footer{
         display: block;
-        position: relative; bottom: 0;
+        position: relative;
+        bottom: 0;
+        text-align: center;
     }
 }
