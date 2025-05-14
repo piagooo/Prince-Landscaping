@@ -2,19 +2,27 @@
     font-family: nunito;
     src: url(../fonts/nunito/nunito-regular.ttf);
 }
-.parallax {
-    background-image: url(../images/Services/FullSizeRender-11.jpg);
-    height: 80%;
-    min-width: 220px;
-    background-attachment: fixed;
-    background-position: 50% 65%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+#myVideo{
+    display: none;
 }
 
+.header-image{
+    object-fit: cover;
+    width: 100vw;
+    height: 300px;
+}
+body{
+    display: flex;
+}
+.main-content{
+    display: flex;
+    margin-top: 55px;
+}
 .intro{
-    height: 400px;
     text-align: center;
+    flex-basis: 50%;
+    order: 1;
     h1{
         font-family: nunito;
         padding-top: 20px;
@@ -27,10 +35,47 @@
         font-family: nunito;
     }
 }
+.mobile-footer{
+    position: fixed; bottom: 0; 
+}
+.split-footer{
+    display: none;
+}
 
-@media (max-width: 780px){
-    footer{
-        position: fixed; bottom: 0; 
+@media (min-width: 780px){
+    #myVideo{
+        display:inline-flex;
+        flex-basis: 50%;
+        order: 2;
+    }
+    .header-image{
+        display: none;
+    }
+    body{
+        display: flex;
+    }
+    .main-content{
+        display: flex;
+        margin-top: 55px;
+    }
+    .intro{
+        padding-top: 100px;
+        text-align: center;
+        flex-basis: 50%;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-family: nunito;
+            padding-top: 20px;
+        }
+    
+        p{
+            padding-top: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-family: nunito;
+        }
     }
     p{
         padding-top: 25px;
@@ -38,5 +83,16 @@
         padding-right: 20px;
         padding-bottom: 55px;
         font-family: nunito;
+    }
+ 
+    .bio{
+        height: 63.85vh;
+    }
+    .mobile-footer{
+        display: none;
+    }
+    .split-footer{
+        display: block;
+        position: relative; bottom: 0;
     }
 }
