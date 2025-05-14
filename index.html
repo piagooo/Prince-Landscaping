@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prince Landscaping</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/loading.css">
+        <link rel="icon" href="images/Logo/LOGO.jpg" type="image/png">
+        <script src="js/general.js"></script>
+    </head>
+
+    <body> 
+        <div id="loading-screen">
+            <img src="images/Logo/LOGO-pl.jpg" alt="Logo" id="logo"> 
+        </div>
+
+        <nav class="navbar">
+            <div id="hamburger-icon" onclick="displayMenu()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
+
+            <ul class="menu" id="menu">
+                <img id="nav-logo" src="images/Logo/LOGO-pl.jpg" alt="logo">
+                <li><a href="#" style="color:rgb(255, 220, 94)">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    
+    
+        <div class="main-content">
+            <video id="myVideo" class="videos" muted loop autoplay controls> <source src="video/Prince Landscaping_Vert_4K.mov" type="video/mp4"> </video>
+
+            <main>
+                <div class="intro">
+                    <div class="image-container">
+                        <img class="header-image" src="images/Services/FullSizeRender-16.jpg">
+                    </div>
+                    <div class="bio">
+                        <center><img src="images/SocialMedia/crown.png" width="100"></center>
+                        <h1>Prince Landscaping</h1>
+                        <p> 
+                            With over 10 years of experience in Phoenix, Prince Landscape is a trusted name in professional landscape design and installation. We specialize in hardscaping, turf installation, stonework, planting, and custom fire features, delivering tailored solutions that enhance outdoor living spaces of all sizes.
+                            <br>
+                            <br>
+                            At Prince Landscape, we pride ourselves on working closely with each client to understand their unique vision and space requirements. Whether you're designing a landscape for a new build or refreshing an existing yard, we are committed to helping you make the most of your space—no matter the lot size.
+                            <br>
+                            <br>
+                            From elegant stone patios to vibrant plant layouts and functional fire elements, our team brings creativity, quality craftsmanship, and attention to detail to every project. Let Prince Landscape turn your outdoor space into a personalized oasis you’ll enjoy for years to come.
+                        </p>
+                    </div>
+                    <footer class="split-footer">
+                        <a href="https://www.facebook.com/PrinceLandscapesllc/" target="_blank"><img src="images/SocialMedia/facebook.png" class="social" title="Facebook"></a>
+                        <a href="https://www.instagram.com/prince_landscapesllc/#" target="_blank"><img src="images/SocialMedia/instagram.png" class="social" title="Instagram"></a>
+                    
+                        <p>Copyright 2025 &#169; Prince Landscaping LLC.  Template by Virtual Space LLC.</p>
+                    </footer>
+                </div>
+            </main>
+        </div>
+        
+    <script>
+            // JavaScript para manejar la carga y desaparecer la pantalla de carga
+            window.addEventListener('load', () => {
+                // Espera 3 segundos antes de que el fondo y el logo empiecen a desvanecerse
+                setTimeout(() => {
+                    // Elimina la pantalla de carga (hace que se desvanezca)
+                    document.getElementById('loading-screen').classList.add('loaded');
+                    
+                    // Muestra el contenido de la página (desaparece el fondo y aparece el contenido)
+                    document.getElementById('content').classList.add('loaded');
+                }, 3000); // 3 segundos antes de desvanecer la pantalla de carga
+
+                
+            });
+    </script>
+
+    </body> 
+    <footer class="mobile-footer">
+    
+        <a class="socials" href="https://www.facebook.com/PrinceLandscapesllc/" target="_blank"><img src="images/SocialMedia/facebook.png" class="social" title="Facebook"></a>
+        <a class="socials" href="https://www.instagram.com/prince_landscapesllc/#" target="_blank"><img src="images/SocialMedia/instagram.png" class="social" title="Instagram"></a>
+    
+        <p>Copyright 2025 &#169; Prince Landscaping LLC.  Template by Virtual Space LLC.</p>
+    </footer>
+</html>
