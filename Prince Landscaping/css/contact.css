@@ -9,7 +9,7 @@
 }
 .parallax { 
     background-image: url(../images/Services/FullSizeRender-16.jpg);
-    height: 50%;
+    height: 80%;
     min-width: 220px;
     background-attachment: fixed;
     background-position: 50% 10%;
@@ -23,9 +23,9 @@
 }
 .contact{
     flex-basis: 50%;
-    height: 50vh;
+    height: 300px;
     width: 45%;
-    background-color: rgb(32, 32, 38);
+    background-color: rgb(33, 54, 33);
     margin: 10px;
     border-radius: 20px;
     text-align: center;
@@ -37,7 +37,6 @@
 h1, h2, h3, p{
     color: white;
     font-family: nunito;
-    
 }
 h1{
     padding: 10px;
@@ -76,7 +75,7 @@ textarea{
         flex-basis: 100%;
         height: 300px;
         width: 97%;
-        background-color: rgb(32, 32, 38);
+        background-color: rgb(33, 54, 33);
         margin: 10px;
         border-radius: 20px;
         text-align: center;
