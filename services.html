@@ -9,9 +9,15 @@
         <script src="js/services.js"></script>
     </head>
 
-    <body> 
+   
         
         <nav class="navbar">
+            <input id="menu-button" type="checkbox">
+            <div id="hamburger-icon">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
             <ul class="menu">
                 <img id="nav-logo" src="images/Logo/LOGO-pl.jpg" alt="logo">
                 <li><a href="index.html">Home</a></li>
@@ -20,6 +26,8 @@
             </ul>
         </nav>
         
+        
+        <body> 
         
         <div class="parallax"></div>
 
@@ -40,14 +48,14 @@
                                 <li>Water features (ponds/fountains)</li>
                             </ul>
                             <div class="gallery">
-                                <div class="gallery-image"><img src="images/Services/Installation1-IMG_20250413_092122.jpg"></div>
-                                <div class="gallery-image"><img src="images/Services/Installation 2-_IMG_20250413_092110.jpg"></div>
-                                <div class="gallery-image"><img src="images/Services/Installation 3- IMG_20250413_092102.jpg"></div>
-                                <div class="gallery-image"><img src="images/Services/Installation 3FullSizeRender-2.jpg"></div>
+                                <div class="gallery-image"><img src="images/Services/Installation1-IMG_20250413_092122.jpg" onclick="changePicture('big-picture1','small-picture1.1')"></div>
+                                <div class="gallery-image"><img id ="small-picture1.2" src="images/Services/Installation 2-_IMG_20250413_092110.jpg" onclick="changePicture('big-picture1','small-picture1.1')"></div>
+                                <div class="gallery-image"><img id ="small-picture1.3" src="images/Services/Installation 3- IMG_20250413_092102.jpg" onclick="changePicture('big-picture1','small-picture1.1')"></div>
+                                <div class="gallery-image"><img id ="small-picture1.4" src="images/Services/Installation 3FullSizeRender-2.jpg" onclick="changePicture('big-picture1','small-picture1.1')"></div>
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/Services/IMG_20250413_092100.jpg">
+                            <img id="big-picture1" src="images/Services/IMG_20250413_092100.jpg">
                         </div>
                     </div>
                 </div>
@@ -68,7 +76,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/Services/FullSizeRender-13.jpg" alt="fireplace example">
+                            <img id="big-picture2" src="images/Services/FullSizeRender-13.jpg" alt="fireplace example">
                         </div>
                     </div>
                 </div>
@@ -93,7 +101,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="images/Services/IMG_20250413_092147.jpg">
+                            <img id="big-picture3" src="images/Services/IMG_20250413_092147.jpg">
                         </div>
                     </div>
                     

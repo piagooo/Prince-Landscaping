@@ -108,6 +108,14 @@ footer{
 @media screen and (max-width: 780px){
     .image-container{
         opacity: 0;
+        flex-basis: 0;
+    }
+    .service-container{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .next, .prev{
+        margin-top: 200px;
     }
     .gallery-image{
         width: 75px;
@@ -116,6 +124,10 @@ footer{
         margin-right: 5px;
         p{
             padding-top: 20px;
+        }
+        img{
+            height: 75px;
+            width: 75px;
         }
     }
 }

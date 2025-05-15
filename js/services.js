@@ -21,3 +21,9 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     
 }
+
+function changePicture(picture, newPicture){
+  const bigPicture = document.getElementsById(picture)
+  const newbigPicture = document.getElementById(newPicture).src
+  bigPicture.src = newbigPicture.src;
+}

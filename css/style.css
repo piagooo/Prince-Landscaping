@@ -24,12 +24,22 @@ body, html{
     margin-bottom: 5px;
     
 }
-
+#menu-button{
+    position: absolute; top: 15px; left: 10px;
+    width: 33px;
+    height: 33px;
+    opacity: 0;
+    z-index: 4;
+    cursor: pointer;
+}
+#menu-button:checked ~.menu{
+    display: block;
+}
 #hamburger-icon{
     cursor: pointer;
     display: block;
-    margin-top: 10px;
-    position: absolute;
+    margin-top: 0px;
+    position: absolute; top: 15px; left: 10px;
 }
 
 .menu{
@@ -37,11 +47,14 @@ body, html{
     display: none;
     justify-content: space-evenly;
     width: 40%;
+    background-color: black;
+    padding-top: 55px;
     li{
         flex-basis: 34%;
         list-style-type: none;
         text-align: center;
         padding-top: 12px;
+        height: 40px;
     }
     
     a{
@@ -105,6 +118,10 @@ ul{
         display:none;
     }
     .menu{
+        display: flex;
+        padding-top: 0px;
+    }
+    #menu-button:checked ~.menu{
         display: flex;
     }
 
